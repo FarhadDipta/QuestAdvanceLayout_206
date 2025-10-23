@@ -1,4 +1,4 @@
-package com.example.myuipertama
+package com.example.praktikum2
 
 import android.text.Layout
 import androidx.compose.foundation.Image
@@ -43,7 +43,7 @@ fun AktivitasPertama(modifier: Modifier) {
             )
         ) {
             Row {
-                val gambar = painterResource(id = R.drawable.logo_ugm)
+                val gambar = painterResource(id = R.drawable.logo_umy)
                 Image(
                     painter = gambar,
                     contentDescription = null,
