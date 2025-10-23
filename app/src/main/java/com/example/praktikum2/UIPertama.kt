@@ -54,7 +54,7 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                 val gambar = painterResource(id = R.drawable.logo_umy)
                 Image(
                     painter = gambar,
-                    contentDescription = null,
+                    contentDescription = "Icon Pendidikan",
                     modifier = Modifier
                         .size(40.dp)
                         .padding(all = 5.dp)
