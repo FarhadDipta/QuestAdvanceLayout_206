@@ -22,7 +22,8 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
         modifier = Modifier
             .padding(top = 100.dp)
             .fillMaxSize(),
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.SpaceBetween
     ) {
         Text(
             text = stringResource(id = R.string.prodi),
