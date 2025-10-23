@@ -94,4 +94,47 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
         }
     }
     Spacer(modifier = Modifier.height(10.dp))
+
+    Card(
+        modifier = Modifier
+            .fillMaxWidth(fraction = 1f)
+            .padding(10.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = Color(0xFF0D47A1)
+        )
+    ) {
+        Row(
+            modifier = Modifier.padding(10.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.logo_umy),
+                contentDescription = "Icon Card 2",
+                modifier = Modifier.size(40.dp)
+            )
+            Spacer(modifier = Modifier.width(10.dp))
+            Column {
+                Text(
+                    text = stringResource(id = R.string.nama1),
+                    fontSize = 30.sp,
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold
+                )
+                Text(
+                    text = stringResource(id = R.string.alamat1),
+                    fontSize = 16.sp,
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold
+                )
+                Text(
+                    text = stringResource(id = R.string.no1),
+                    fontSize = 16.sp,
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold
+                )
+            }
+        }
+    }
+
+    Spacer(modifier = Modifier.height(10.dp))
 }
