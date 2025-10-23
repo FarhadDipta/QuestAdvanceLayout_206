@@ -1,5 +1,6 @@
-package com.example.praktikum2
+package com.example.myuipertama
 
+import android.text.Layout
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
@@ -11,6 +12,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -41,7 +43,7 @@ fun AktivitasPertama(modifier: Modifier) {
             )
         ) {
             Row {
-                val gambar = painterResource(id = R.drawable.logo_umy)
+                val gambar = painterResource(id = R.drawable.logo_ugm)
                 Image(
                     painter = gambar,
                     contentDescription = null,
@@ -69,11 +71,11 @@ fun AktivitasPertama(modifier: Modifier) {
         }
         Box(
             modifier = Modifier.fillMaxSize()
-        ) {
+        ){
             Text(
                 text = stringResource(id = R.string.copy),
                 modifier = Modifier
-                    .align(Alignment.BottomCenter)
+                    .align (Alignment.BottomCenter)
                     .padding(bottom = 50.dp)
             )
         }
