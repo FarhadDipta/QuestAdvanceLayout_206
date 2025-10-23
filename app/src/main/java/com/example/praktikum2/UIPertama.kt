@@ -13,6 +13,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.LineHeightStyle
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -27,163 +28,150 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally
-        ) {}
-        Text(
-            text = stringResource(id = R.string.prodi),
-            fontSize = 24.sp,
-            fontWeight = FontWeight.Bold
-        )
-        Text(
-            text = stringResource(id = R.string.univ),
-            fontSize = 20.sp,
-            textAlign = TextAlign.Center
-        )
-        Spacer(modifier = Modifier.height(25.dp))
-        Card(
-            modifier = Modifier
-                .fillMaxWidth(fraction = 1f)
-                .padding(all = 10.dp),
-            colors = CardDefaults.cardColors(
-                containerColor = Color.DarkGray
-            )
         ) {
-            Row (
-                modifier = Modifier.padding(10.dp),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                val gambar = painterResource(id = R.drawable.logo_umy)
-                Image(
-                    painter = gambar,
-                    contentDescription = "Icon Pendidikan",
-                    modifier = Modifier
-                        .size(40.dp)
-                        .padding(all = 5.dp)
+            Text(
+                text = stringResource(id = R.string.prodi),
+                fontSize = 24.sp,
+                fontWeight = FontWeight.Bold
+            )
+            Text(
+                text = stringResource(id = R.string.univ),
+                fontSize = 20.sp,
+                textAlign = TextAlign.Center
+            )
+            Spacer(modifier = Modifier.height(25.dp))
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth(fraction = 1f)
+                    .padding(10.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color.DarkGray
                 )
-                Spacer(modifier = Modifier.width(30.dp))
-                Column {
-                    Text(
-                        text = stringResource(id = R.string.nama),
-                        fontSize = 30.sp,
-                        color = Color.White,
-                        modifier = Modifier.padding(top = 15.dp)
+            ) {
+                Row(
+                    modifier = Modifier.padding(10.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Image(
+                        painter = painterResource(id = R.drawable.logo_umy),
+                        contentDescription = "Icon Pendidikan",
+                        modifier = Modifier.size(40.dp)
                     )
-                    Text(
-                        text = stringResource(id = R.string.alamat),
-                        fontSize = 20.sp,
-                        color = Color.White,
-                        modifier = Modifier.padding(top = 15.dp)
+                    Spacer(modifier = Modifier.width(10.dp))
+                    Column {
+                        Text(
+                            text = stringResource(id = R.string.nama),
+                            fontSize = 30.sp,
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold
+                        )
+                        Text(
+                            text = stringResource(id = R.string.alamat),
+                            fontSize = 16.sp,
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold
+                        )
+                        Text(
+                            text = stringResource(id = R.string.no_hp),
+                            fontSize = 16.sp,
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                }
+            }
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth(fraction = 1f)
+                    .padding(10.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color(0xFF0D47A1)
+                )
+            ) {
+                Row(
+                    modifier = Modifier.padding(10.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Image(
+                        painter = painterResource(id = R.drawable.logo_umy),
+                        contentDescription = "Icon Card 2",
+                        modifier = Modifier.size(40.dp)
                     )
-                    Text(
-                        text = stringResource(id = R.string.no_hp),
-                        fontSize = 16.sp,
-                        color = Color.White,
-                        fontWeight = FontWeight.Bold
+                    Spacer(modifier = Modifier.width(10.dp))
+                    Column {
+                        Text(
+                            text = stringResource(id = R.string.nama1),
+                            fontSize = 30.sp,
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold
+                        )
+                        Text(
+                            text = stringResource(id = R.string.alamat1),
+                            fontSize = 16.sp,
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold
+                        )
+                        Text(
+                            text = stringResource(id = R.string.no1),
+                            fontSize = 16.sp,
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                }
+            }
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth(fraction = 1f)
+                    .padding(10.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color(0xFF1B5E20)
+                )
+            ) {
+                Row(
+                    modifier = Modifier.padding(10.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Image(
+                        painter = painterResource(id = R.drawable.logo_umy),
+                        contentDescription = "Icon Card 3",
+                        modifier = Modifier.size(40.dp)
                     )
+                    Spacer(modifier = Modifier.width(10.dp))
+                    Column {
+                        Text(
+                            text = stringResource(id = R.string.nama2),
+                            fontSize = 30.sp,
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold
+                        )
+                        Text(
+                            text = stringResource(id = R.string.alamat2),
+                            fontSize = 16.sp,
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold
+                        )
+                        Text(
+                            text = stringResource(id = R.string.no2),
+                            fontSize = 16.sp,
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
                 }
             }
         }
-        Box(
-            modifier = Modifier.fillMaxSize()
-        ){
-            Text(
-                text = stringResource(id = R.string.copy),
-                modifier = Modifier
-                    .align (Alignment.BottomCenter)
-                    .padding(bottom = 50.dp)
-            )
-        }
-    }
-    Spacer(modifier = Modifier.height(10.dp))
 
-    Card(
-        modifier = Modifier
-            .fillMaxWidth(fraction = 1f)
-            .padding(10.dp),
-        colors = CardDefaults.cardColors(
-            containerColor = Color(0xFF0D47A1)
+        Text(
+            text = stringResource(id = R.string.copy),
+            fontSize = 14.sp,
+            modifier = Modifier.padding(bottom = 20.dp)
         )
-    ) {
-        Row(
-            modifier = Modifier.padding(10.dp),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            Image(
-                painter = painterResource(id = R.drawable.logo_umy),
-                contentDescription = "Icon Card 2",
-                modifier = Modifier.size(40.dp)
-            )
-            Spacer(modifier = Modifier.width(10.dp))
-            Column {
-                Text(
-                    text = stringResource(id = R.string.nama1),
-                    fontSize = 30.sp,
-                    color = Color.White,
-                    fontWeight = FontWeight.Bold
-                )
-                Text(
-                    text = stringResource(id = R.string.alamat1),
-                    fontSize = 16.sp,
-                    color = Color.White,
-                    fontWeight = FontWeight.Bold
-                )
-                Text(
-                    text = stringResource(id = R.string.no1),
-                    fontSize = 16.sp,
-                    color = Color.White,
-                    fontWeight = FontWeight.Bold
-                )
-            }
-        }
     }
-
-    Spacer(modifier = Modifier.height(10.dp))
-
-    Card(
-        modifier = Modifier
-            .fillMaxWidth(fraction = 1f)
-            .padding(10.dp),
-        colors = CardDefaults.cardColors(
-            containerColor = Color(0xFF1B5E20)
-        )
-    ) {
-        Row(
-            modifier = Modifier.padding(10.dp),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            Image(
-                painter = painterResource(id = R.drawable.logo_umy),
-                contentDescription = "Icon Card 3",
-                modifier = Modifier.size(40.dp)
-            )
-            Spacer(modifier = Modifier.width(10.dp))
-            Column {
-                Text(
-                    text = stringResource(id = R.string.nama2),
-                    fontSize = 30.sp,
-                    color = Color.White,
-                    fontWeight = FontWeight.Bold
-                )
-                Text(
-                    text = stringResource(id = R.string.alamat2),
-                    fontSize = 16.sp,
-                    color = Color.White,
-                    fontWeight = FontWeight.Bold
-                )
-                Text(
-                    text = stringResource(id = R.string.no2),
-                    fontSize = 16.sp,
-                    color = Color.White,
-                    fontWeight = FontWeight.Bold
-                )
-            }
-        }
-    }
-}
-
-Text(
-text = stringResource(id = R.string.copy),
-fontSize = 14.sp,
-modifier = Modifier.padding(bottom = 20.dp)
-)
-}
 }
