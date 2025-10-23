@@ -35,7 +35,8 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
         )
         Text(
             text = stringResource(id = R.string.univ),
-            fontSize = 20.sp
+            fontSize = 20.sp,
+            textAlign = TextAlign.Center
         )
         Spacer(modifier = Modifier.height(25.dp))
         Card(
